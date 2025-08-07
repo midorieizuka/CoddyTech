@@ -9,3 +9,6 @@ To check the length of the list, we can use the len() function:
 length = len(my_list)
 The variable length will hold 4 because there are 4 elements in the list.
 """
+# Create a list called shopping_list that contains the following items: bread, eggs, milk, and butter.
+
+shopping_list = ["bread", "eggs", "milk", "butter"]

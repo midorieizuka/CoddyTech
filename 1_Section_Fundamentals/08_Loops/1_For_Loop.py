@@ -38,3 +38,21 @@ This will first loop through all numbers between 1 and 101 (not including 101) a
 
 for i in range(3, 28):
     print(f"Hello Coddy: {i}")
+
+
+# Challenge
+"""
+Write a program that counts the number of even numbers between 10 and 50 (inclusive).
+
+Use a for loop and an if statement to check if each number is even.
+
+Store the count in a variable called count_even.
+
+Remember, you can check if a number is even by using the modulo operator: number % 2 == 0
+"""
+
+count_even = 0
+for i in range(10, 51):
+    if i % 2 == 0:
+        count_even += 1
+print(f"count_even = {count_even}")

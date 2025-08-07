@@ -26,3 +26,29 @@ for i in range(1, 11):
     if i == 6:
         break
     print(i)
+
+# Challenge
+
+"""
+Write a program that:
+
+Takes two numbers as input
+Creates a list of numbers from the first input to the second input (not including)
+Finds and prints the first even number greater than 5
+Then, in a separate loop, find and print the first number divisible by 7
+Output the result in the following format:
+
+First even number greater than 5: [...]
+First number divisible by 7: [...]
+"""
+first_number = int(input())
+second_number = int(input())
+for i in range(first_number, second_number):
+    if i > 5:
+        if i % 2 == 0:
+            print(f"First even number greater than 5: {i}")
+            break
+for i in range(first_number, second_number): 
+    if i % 7 == 0:
+        print(f"First number divisible by 7: {i}")
+        break
