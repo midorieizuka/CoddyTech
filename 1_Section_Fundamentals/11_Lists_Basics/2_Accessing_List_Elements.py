@@ -26,7 +26,7 @@ for i in range(len(my_list)):
 	my_list[i] 
 This way, i will iterate from 0 to len(my_list) (not including) which is exactly all of the list indices.
 """
-lst = list(input())
+lst = list(input().split(", "))
 
 def values(lst):
     # Write code here
@@ -34,3 +34,23 @@ def values(lst):
         print(lst[i])
 
 values(lst)
+
+# Challenge
+"""
+Create a function named sum_elements that receives a list as an argument and prints the sum of all the elements in the list.
+
+To iterate over a list, use the len() function inside the range() function:
+
+my_list = [10, 20, 30, 40, 50]
+for i in range(len(my_list)):
+	# Access elements using my_list[i]
+Use this method to access each element of the list, add them together, and print the total sum.
+"""
+
+def sum_elements(lst):
+    total_sum = 0
+    for i in range(len(lst)):
+        total_sum += float(lst[i])
+    print(total_sum)
+
+sum_elements(lst)
