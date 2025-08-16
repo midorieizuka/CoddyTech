@@ -59,7 +59,11 @@ prefix = input()
 # Write your code below
 def add_prefix(numbers, prefix):
     separate = numbers.split()
-    line = prefix + prefix.join(separate)
+    new_list = []
+    for item in separate:
+        num = prefix + item
+        new_list.append(num)
+    line = " ".join(new_list)
     return line
 
 add_prefix(numbers, prefix)
