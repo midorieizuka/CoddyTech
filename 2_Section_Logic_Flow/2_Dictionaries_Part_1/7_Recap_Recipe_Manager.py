@@ -28,3 +28,12 @@ recipe_book["Smoothie"] = ["banana", "milk", "honey"]
 recipe_book["Smoothie"].append("blueberries")
 
 print(recipe_book)
+
+"""
+To add an item to an existing list without replacing the entire list, you should use a list method specifically designed for this purpose.
+The append() method is commonly used to add a single item to the end of a list.
+
+Consider how you would use append() on the list that is the value associated with the "Smoothie" key in your recipe_book dictionary.
+
+For example, if you had a list my_list = [1, 2], and you wanted to add 3 to it, you would use my_list.append(3), which would result in my_list becoming [1, 2, 3].
+"""
