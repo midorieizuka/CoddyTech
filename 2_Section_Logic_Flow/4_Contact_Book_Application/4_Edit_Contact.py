@@ -66,25 +66,22 @@ def view_contact(contact_book):
 def edit_contact(contact_book):
     contact_name = input()
     if contact_name in contact_book:
+        contact_details = contact_book[contact_name]
         new_phone = input()
         new_email = input()
         new_address = input()
-        if new_name == "":
-            pass
-        else:
-            contact_book[contact_name] = new_name
         if new_phone == "":
-            pass
+            contact_book[contact_name]["phone"] = contact_details["phone"]
         else:
-            contact_book[new_name]["phone"] = new_phone
+            contact_book[contact_name]["phone"] = new_phone
         if new_email == "":
-            pass
+            contact_book[contact_name]["email"] = contact_details["email"]
         else:        
-            contact_book[new_name]["email"] = new_email
+            contact_book[contact_name]["email"] = new_email
         if new_address == "":
-            pass
+            contact_book[contact_name]["address"] = contact_details["address"]
         else:
-            contact_book[new_name]["address"] = new_address
+            contact_book[contact_name]["address"] = new_address
         print("Contact updated successfully!")
     else:
         print("Contact not found!")
