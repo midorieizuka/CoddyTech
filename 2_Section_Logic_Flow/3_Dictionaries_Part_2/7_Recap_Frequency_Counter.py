@@ -11,5 +11,10 @@ For example, if the input list is [1, 2, 2, 3, 3, 3, 4, 4, 4, 4], the function s
 def frequency_counter(data_list):
     # Write code here
     dictionary = {}
-    for item in range(len(data_list)):
-        
+    count = 0
+    for item in data_list:
+        if item in dictionary.keys():
+            dictionary[item] += 1
+        else:
+            dictionary[item] = 1
+    return dictionary
