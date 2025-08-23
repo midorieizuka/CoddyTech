@@ -8,12 +8,14 @@ my_set = {1, 2, 3}
 my_set.add(4)
 print(my_set)
 # Output: {1, 2, 3, 4}
+
 Removing an element from a set: (raises an error if it does not exist!)
 
 my_set = {1, 2, 3}
 my_set.remove(2)
 print(my_set)
 # Output: {1, 3}
+
 Checking for the presence of an element:
 
 my_set = {1, 2, 3}
