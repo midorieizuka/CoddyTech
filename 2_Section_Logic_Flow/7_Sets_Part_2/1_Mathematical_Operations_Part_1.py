@@ -9,6 +9,7 @@ set2 = {3, 4, 5}
 union_set = set1 | set2
 print(union_set)
 # Output: {1, 2, 3, 4, 5}
+
 Intersection (& or intersection()): Returns a set containing only the elements that are common to both sets.
 
 set1 = {1, 2, 3}
@@ -16,6 +17,7 @@ set2 = {3, 4, 5}
 intersection_set = set1 & set2
 print(intersection_set)
 # Output: {3}
+
 Difference (- or difference()): Returns a set containing the elements that are in the first set but not in the second set.
 
 set1 = {1, 2, 3}
@@ -23,6 +25,7 @@ set2 = {3, 4, 5}
 difference_set = set1 - set2
 print(difference_set)
 # Output: {1, 2}
+
 Symmetric Difference (^ or symmetric_difference()): Returns a set containing the elements that are in either of the sets, but not in both.
 
 set1 = {1, 2, 3}
