@@ -70,31 +70,31 @@ while True:
         print("Exiting Students Record Manager.")
         break
     elif choice == "1":
-        name = input()
-        age = input()
-        courses = list(input().split(", "))
+        name = input("Student's name: ")
+        age = int(input("Student's age: "))
+        courses = list(input("Student's courses: ").split(", "))
         add_student(name, age, courses)
         print()
     elif choice == "2":
-        name = input()
-        grade = int(input())
+        name = input("Student's name: ")
+        grade = int(input("Student's grade: "))
         add_grade(name, grade)
         print()
     elif choice == "3":
-        name = input()
-        course = input()
+        name = input("Student's name: ")
+        course = input("Student's course: ")
         is_enrolled(name, course)
         print()
     elif choice == "4":
-        name = input()
+        name = input("Student's name: ")
         print(calculate_average_grade(name))
         print()
     elif choice == "5":
-        course = input()
+        course = input("Student's course: ")
         print(list_students_by_course(course))
         print()
     elif choice == "6":
-        threshold = int(input())
+        threshold = int(input("Threshold: "))
         print(filter_top_students(threshold))
         print()
     else:
