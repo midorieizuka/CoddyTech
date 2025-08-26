@@ -9,7 +9,12 @@ For example, if the input dictionary is {'a': 3, 'b': 1, 'c': 2}, the function s
 
 def dictionary_sorter(data_dict):
     # Write code here
-    new = {}
-    order = sorted(data_dict.values())
-    for key, value in data_dict.items():
-        if val
+    dict_items = data_dict.items()
+    list_of_dict = list(dict_items)
+    ordered = sorted(list_of_dict, key=lambda item: item[1])
+    new = dict(ordered)
+    return new
+
+data_dict = {'a': 3, 'b': 1, 'c': 2}
+dictionary_sorter(data_dict)
+print(dictionary_sorter(data_dict))
